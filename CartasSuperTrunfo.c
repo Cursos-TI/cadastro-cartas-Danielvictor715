@@ -72,8 +72,26 @@ scanf("%f", &PIB2);
 printf("Digite a quantidade de pontos turisticos:\n");
 scanf("%d", &pontost2);
 
-
   // Área para exibição dos dados da cidade
+printf("Dados da primeira carta:\n\n");
+printf("Estado: %c\n", estado);
+printf("Código da carta: %c%d\n", estado, codigo);
+printf("Nome do Estado: %c\n", nome);
+printf("População: %d\n", populacao);
+printf("Area em km²: %f\n", area);
+printf("PIB: %f\n", PIB);
+printf("Número de pontos turisticos: %d\n", pontost);
+
+printf("Dados da segunda carta:\n\n");
+printf("Estado: %c\n", estado2);
+printf("Código da carta: %c%d\n", estado2, codigo2);
+printf("Nome do Estado: %c\n", nome2);
+printf("População: %d\n", populacao2);
+printf("Area em km²: %f\n", area2);
+printf("PIB: %f\n", PIB2);
+printf("Número de pontos turisticos: %d\n", pontost2);
+
+
 
 return 0;
 } 
