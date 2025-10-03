@@ -46,11 +46,6 @@ scanf("%d", &pontost);
 
 printf("Vamos cadastrar a 2° carta!\n\n");
 
-printf("Bem vindo ao Super Trunfo de Paises\n");
-printf("Vamos cadastra a 1° carta!\n\n");
-
-// cadastro da primeira carta
-
 printf("Digite uma letra para representar a carta:\n");
 scanf(" %c", &estado2);
 
@@ -76,19 +71,19 @@ scanf("%d", &pontost2);
 printf("Dados da primeira carta:\n\n");
 printf("Estado: %c\n", estado);
 printf("Código da carta: %c%d\n", estado, codigo);
-printf("Nome do Estado: %c\n", nome);
+printf("Nome do Estado: %s\n", nome);
 printf("População: %d\n", populacao);
-printf("Area em km²: %f\n", area);
-printf("PIB: %f\n", PIB);
+printf("Area em km²: %f km²\n", area);
+printf("PIB: %f bilhões de reais\n", PIB);
 printf("Número de pontos turisticos: %d\n", pontost);
 
 printf("Dados da segunda carta:\n\n");
 printf("Estado: %c\n", estado2);
 printf("Código da carta: %c%d\n", estado2, codigo2);
-printf("Nome do Estado: %c\n", nome2);
+printf("Nome do Estado: %s\n", nome2);
 printf("População: %d\n", populacao2);
-printf("Area em km²: %f\n", area2);
-printf("PIB: %f\n", PIB2);
+printf("Area em km²: %f km²\n", area2);
+printf("PIB: %f bilhões de reais\n", PIB2);
 printf("Número de pontos turisticos: %d\n", pontost2);
 
 
