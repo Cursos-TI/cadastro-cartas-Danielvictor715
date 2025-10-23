@@ -91,6 +91,15 @@ printf("Número de pontos turisticos: %d\n", pontost2);
 printf("Densidade populacional: %.2f \n", densidade2);
 printf("PIB per capita: %.2f \n", PIBC2);
 
+// comparação do atributo PIB para determinar o vencedor
+
+printf("Comparando as cartas pelo atributo PIB para determinar o vencedor...\n\n");
+
+if (PIB > PIB2) {
+  printf("A carta vencedora é: %c%d - %s\n", estado, codigo, nome);
+} else {
+  printf("A carta vencedora é: %c%d - %s\n", estado2, codigo2, nome2);
+}
 
 return 0;
 } 
