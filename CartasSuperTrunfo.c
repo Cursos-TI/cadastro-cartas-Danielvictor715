@@ -91,15 +91,36 @@ printf("Número de pontos turisticos: %d\n", pontost2);
 printf("Densidade populacional: %.2f \n", densidade2);
 printf("PIB per capita: %.2f \n", PIBC2);
 
-// comparação do atributo PIB para determinar o vencedor
+// menu interativo para escolher o atributo para atacar a carta
 
-printf("Comparando as cartas pelo atributo PIB para determinar o vencedor...\n\n");
+int opção;
 
-if (PIB > PIB2) {
-  printf("A carta vencedora é: %c%d - %s\n", estado, codigo, nome);
-} else {
-  printf("A carta vencedora é: %c%d - %s\n", estado2, codigo2, nome2);
+printf("Escolha um atributo para iniciar o duelo!\n");
+printf("1 - População...\n");
+printf("2 - Area em km²...\n");
+printf("3 - PIB...\n");
+printf("4 - Pontos turisticos...\n");
+printf("5 - Densidade populacional...\n");
+printf("6 - PIB per capita...\n");
+scanf("%d", &opção);
+
+switch (opção);
+{
+case 1:
+  printf("Você escolheu o atributo população\n");
+
+if (populacao == populacao2) {
+  printf("Empate!\n");
+} else if (populacao > populacao2);
+printf("Carta vencedora:\n\n  )
+
+  break;
+
+default:
+  break;
 }
+
+ 
 
 return 0;
 } 
