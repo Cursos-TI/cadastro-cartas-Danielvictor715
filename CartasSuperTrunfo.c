@@ -108,7 +108,7 @@ scanf("%d", &opção);
 
    printf("\n=== RESULTADO DO DUELO ===\n");
 
-    switch (opcao) {
+    switch (opção) {
         case 1:
             printf("Atributo escolhido: População\n");
             printf("%s: %.2f milhões\n", nome, populacao);
@@ -182,7 +182,7 @@ scanf("%d", &opção);
             break;
 
         default:
-            printf(" Opção inválida! Escolha entre 1 e 6.
+            printf(" Opção inválida! Escolha entre 1 e 6.");
  
 
 return 0;
