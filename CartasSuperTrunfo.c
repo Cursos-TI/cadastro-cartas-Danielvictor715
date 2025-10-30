@@ -104,22 +104,85 @@ printf("5 - Densidade populacional...\n");
 printf("6 - PIB per capita...\n");
 scanf("%d", &opção);
 
-switch (opção);
-{
-case 1:
-  printf("Você escolheu o atributo população\n");
+// resultado e logica do jogo
 
-if (populacao == populacao2) {
-  printf("Empate!\n");
-} else if (populacao > populacao2);
-printf("Carta vencedora:\n\n  )
+   printf("\n=== RESULTADO DO DUELO ===\n");
 
-  break;
+    switch (opcao) {
+        case 1:
+            printf("Atributo escolhido: População\n");
+            printf("%s: %.2f milhões\n", nome, populacao);
+            printf("%s: %.2f milhões\n", nome2, populacao2);
+            if (populacao > populacao2)
+                printf(" %s venceu!\n", nome);
+            else if (populacao2 > populacao)
+                printf(" %s venceu!\n", nome2);
+            else
+                printf(" Empate!\n");
+            break;
 
-default:
-  break;
-}
+        case 2:
+            printf("Atributo escolhido: Área\n");
+            printf("%s: %.2f km²\n", nome, area);
+            printf("%s: %.2f km²\n", nome2, area2);
+            if (area > area2)
+                printf(" %s venceu!\n", nome);
+            else if (area2 > area)
+                printf(" %s venceu!\n", nome2);
+            else
+                printf(" Empate!\n");
+            break;
 
+        case 3:
+            printf("Atributo escolhido: PIB\n");
+            printf("%s: %.2f bilhões\n", nome, PIB);
+            printf("%s: %.2f bilhões\n", nome2, PIB2);
+            if (PIB > PIB2)
+                printf(" %s venceu!\n", nome);
+            else if (PIB2 > PIB)
+                printf(" %s venceu!\n", nome2);
+            else
+                printf(" Empate!\n");
+            break;
+
+        case 4:
+            printf("Atributo escolhido: Pontos turísticos\n");
+            printf("%s: %d\n", nome, pontost);
+            printf("%s: %d\n", nome2, pontost2);
+            if (pontost > pontost2)
+                printf(" %s venceu!\n", nome);
+            else if (pontost2 > pontost)
+                printf(" %s venceu!\n", nome2);
+            else
+                printf(" Empate!\n");
+            break;
+
+        case 5:
+            printf("Atributo escolhido: Densidade demográfica (menor vence)\n");
+            printf("%s: %.2f hab/km²\n", nome, densidade);
+            printf("%s: %.2f hab/km²\n", nome2, densidade2);
+            if (densidade < densidade2)
+                printf(" %s venceu (menor densidade)!\n", nome);
+            else if (densidade2 < densidade)
+                printf(" %s venceu (menor densidade)!\n", nome2);
+            else
+                printf(" Empate!\n");
+            break;
+
+        case 6:
+            printf("Atributo escolhido: PIB per capita\n");
+            printf("%s: %.2f R$/hab\n", nome, PIBC);
+            printf("%s: %.2f R$/hab\n", nome2, PIBC2);
+            if (PIBC > PIBC2)
+                printf(" %s venceu!\n", nome);
+            else if (PIBC2 > PIBC)
+                printf(" %s venceu!\n", nome2);
+            else
+                printf(" Empate!\n");
+            break;
+
+        default:
+            printf(" Opção inválida! Escolha entre 1 e 6.
  
 
 return 0;
